@@ -15,6 +15,7 @@ RUN rm -f /lib/systemd/system/multi-user.target.wants/*;\
 RUN yum -y install rpm dnf-plugins-core \
   && yum -y update \
   && yum -y install \
+  initscripts \
   sudo \
   which \
   && yum clean all
